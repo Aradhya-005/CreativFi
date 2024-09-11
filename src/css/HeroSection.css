@@ -428,7 +428,7 @@ h2 {
 @media(max-width : 450px){
   .hero-section {
     margin-right: -115px;
-    flex-direction: column; /* Stack text and button below the image */
+    flex-direction: row; /* Stack text and button below the image */
     align-items: center; /* Center align items horizontally */
     text-align: center; /* Center text and button */
   }
@@ -439,16 +439,16 @@ h2 {
     line-height: 0px;
 }
 
-  .hero-img {
-    width: 100%; /* Make image responsive */
-    margin-bottom: 20px; /* Add space below the image */
-    order: 1; /* Image appears first */
+  /* .hero-img {
+    width: 100%; 
+    margin-bottom: 20px; 
+    order: 1; 
   }
 
   .container-1 {
-    width: max-content; /* Allow container to be responsive */
-    order: 2; /* Text and button appear after the image */
-  }
+    width: max-content; 
+    order: 2; 
+  } */
   .showcase{
     max-width: max-content;
     margin-top: 500px;
