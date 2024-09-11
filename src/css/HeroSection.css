@@ -427,10 +427,10 @@ h2 {
 
 @media(max-width : 450px){
   .hero-section {
-    margin-right: -115px;
     flex-direction: row; /* Stack text and button below the image */
     align-items: center; /* Center align items horizontally */
-    text-align: center; /* Center text and button */
+    margin-right: 0;
+    text-align: justify;
   }
   .hero-section h5 {
     font-family: Poly;
@@ -441,7 +441,16 @@ h2 {
 .hero-img {
   width: 350px;
 }
-
+.container-2{
+  margin-right: -281px;
+}
+.container-1{
+  margin-left: -40px;
+}
+.container-1 p{
+  max-width: 275px;
+    line-height: 20px;
+}
   /* .hero-img {
     width: 100%; 
     margin-bottom: 20px; 
