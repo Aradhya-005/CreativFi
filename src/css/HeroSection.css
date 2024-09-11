@@ -438,6 +438,9 @@ h2 {
     
     line-height: 0px;
 }
+.hero-img {
+  width: 350px;
+}
 
   /* .hero-img {
     width: 100%; 
