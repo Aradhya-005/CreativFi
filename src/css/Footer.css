@@ -83,3 +83,21 @@
     font-size: 14px;
   }
   
+  @media(max-width:450px){
+    .footer-container {
+      /* margin-left: 59px; */
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer{
+      width: max-content;
+    }
+    .footer-social-media{
+      margin-top: o;
+    }
+    .footer-links, .footer-contact, .footer-social-media, .footer-legal {
+      flex: 1 1;
+      margin: 15px;
+      max-width: 250px;
+    }
+  }

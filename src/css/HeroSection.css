@@ -458,6 +458,9 @@ h2 {
   .grid-container > :first-child {
     visibility: hidden; /* Hide the element but keep its space */
   }
+  .Stats{
+    width: 793px;
+  }
   .user-stats {
     background-color: #14A800;
     width: 793px;
@@ -494,8 +497,8 @@ h2 {
   justify-content: center;
 }
 .how-it-works{
-  margin-right: -258px;
-  margin-left: 141px;
+  width: 794px;
+  padding: 50px 0;
 }
 .bottom-heading{
   height: 450px;
@@ -504,6 +507,9 @@ h2 {
 .specialized-services-grid{
   grid-template-columns: repeat(2, 341px);
     grid-template-rows: repeat(2, 142px);
+}
+.specialized-services-heading h2 {
+  margin-left: -36px;
 }
 .footer-container {
   /* margin-left: 59px; */
