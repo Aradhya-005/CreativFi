@@ -425,7 +425,7 @@ h2 {
 }
 
 
-@media(max-width : 410px){
+@media(max-width : 360px){
   .hero-section {
     flex-direction: column; /* Stack text and button below the image */
     align-items: center; /* Center align items horizontally */
