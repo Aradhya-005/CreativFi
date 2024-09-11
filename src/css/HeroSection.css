@@ -427,10 +427,17 @@ h2 {
 
 @media(max-width : 450px){
   .hero-section {
+    margin-right: -115px;
     flex-direction: column; /* Stack text and button below the image */
     align-items: center; /* Center align items horizontally */
     text-align: center; /* Center text and button */
   }
+  .hero-section h5 {
+    font-family: Poly;
+    font-size: 40px;
+    
+    line-height: 0px;
+}
 
   .hero-img {
     width: 100%; /* Make image responsive */
@@ -446,6 +453,9 @@ h2 {
     max-width: max-content;
     margin-top: 500px;
     padding: 0;
+  }
+  .showcase h5{
+    margin-right: -351px;
   }
   .grid-container {
     padding: 30px 91px;
@@ -511,20 +521,5 @@ h2 {
 .specialized-services-heading h2 {
   margin-left: -36px;
 }
-.footer-container {
-  /* margin-left: 59px; */
-  display: flex;
-  justify-content: space-between;
-}
-.footer{
-  width: max-content;
-}
-.footer-social-media{
-  margin-top: o;
-}
-.footer-links, .footer-contact, .footer-social-media, .footer-legal {
-  flex: 1 1;
-  margin: 15px;
-  max-width: 250px;
-}
+
 }
