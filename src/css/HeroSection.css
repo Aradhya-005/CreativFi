@@ -428,7 +428,7 @@ h2 {
 @media(max-width : 450px){
   .hero-section {
     margin-top: -20px;
-    margin-bottom: -264px;
+    margin-bottom: -290px;
     flex-direction: row; /* Stack text and button below the image */
     align-items: center; /* Center align items horizontally */
     margin-right: 0;
@@ -483,11 +483,11 @@ h2 {
     visibility: hidden; /* Hide the element but keep its space */
   }
   .Stats{
-    width: 793px;
+    width: 856px;
   }
   .user-stats {
     background-color: #14A800;
-    width: 793px;
+    width: 856px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -511,7 +511,7 @@ h2 {
   margin: 76px 0;
 }
 .heading{
-  width: 793px;
+  width: 856px;
 }
 .how-it-works-grid {
   display: grid;
@@ -526,7 +526,7 @@ h2 {
 }
 .bottom-heading{
   height: 450px;
-  width: 793px;
+  width: 856px;
 }
 .specialized-services-grid{
   grid-template-columns: repeat(2, 341px);
