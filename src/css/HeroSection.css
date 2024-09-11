@@ -428,7 +428,7 @@ h2 {
 @media(max-width : 450px){
   .hero-section {
     margin-top: -20px;
-    margin-bottom: -290px;
+    margin-bottom: -330px;
     flex-direction: row; /* Stack text and button below the image */
     align-items: center; /* Center align items horizontally */
     margin-right: 0;
@@ -469,7 +469,7 @@ h2 {
     padding: 0;
   }
   .showcase h5{
-    margin-right: -351px;
+    margin-right: -406px;
   }
   .grid-container {
     padding: 30px 91px;
@@ -521,7 +521,7 @@ h2 {
   justify-content: center;
 }
 .how-it-works{
-  width: 794px;
+  width: 856px;
   padding: 50px 0;
 }
 .bottom-heading{
