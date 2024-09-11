@@ -1,10 +1,11 @@
-/* src/css/HeroSection.css */
+/* Hero section  */
+
 .hero-section {
   display: flex;
-  justify-content: space-between; /* Ensure containers are spaced evenly */
+  justify-content: space-between; 
   align-items: center;
   margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
   max-width: 85%;
   position: relative;
 }
@@ -23,21 +24,14 @@
 
 .hero-img {
   width: 83%;
-  transition: transform 0.3s ease-in-out, opacity 1s ease-out;
-  animation: slideInRight 1s ease-out forwards;
-  opacity: 0; /* Initial state for animation */
-}
-
-.hero-img:hover {
-  transform: scale(1.05); /* Adjust the scale value as needed for the desired zoom effect */
+ 
 }
 
 .container-1 {
   gap: 38px;
   position: relative;
   width: 560px;
-  animation: slideUp 1s ease-out forwards;
-  opacity: 0; /* Initial state for animation */
+  
 }
 
 .container-1 h3 {
@@ -50,34 +44,11 @@
   font-family: 'Poppins';
   letter-spacing: 5%;
   gap: 38px;
+  margin-bottom: 32px;
 }
 
 .container-2 {
   text-align: right;
-}
-
-/* Slide up animation for container-1 */
-@keyframes slideUp {
-  from {
-      transform: translateY(20px);
-      opacity: 0;
-  }
-  to {
-      transform: translateY(0);
-      opacity: 1;
-  }
-}
-
-/* Slide in right animation for hero-img */
-@keyframes slideInRight {
-  from {
-      transform: translateX(20px);
-      opacity: 0;
-  }
-  to {
-      transform: translateX(0);
-      opacity: 1;
-  }
 }
 
 .started-button {
@@ -87,7 +58,7 @@
   font-size: 15px;
   padding: 14px 28px;
   border-radius: 50px;
-  letter-spacing: 0.1em; /* Equivalent to 10% */
+  letter-spacing: 0.1em; 
   background-color: transparent;
   position: relative;
   overflow: hidden;
@@ -102,7 +73,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  color: rgb(0, 0, 0); /* Use your preferred color */
+  color: rgb(0, 0, 0); 
   border-radius: 50px;
   z-index: -2;
 }
@@ -114,7 +85,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #14A800; /* Darker shade of your color */
+  background-color: #14A800;
   transition: all 0.3s;
   border-radius: 50px;
   z-index: -1;
@@ -127,4 +98,427 @@
 
 .started-button:hover::before {
   width: 100%;
+}
+
+/* showcase section  */
+.showcase{
+  padding: 100px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.showcase h5{
+  font-size: 38px;
+  font-family: 'Poly';
+  font-weight: 400;
+ 
+}
+
+.grid-container {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 equal rows */
+  grid-gap: 10px; /* Space between grid items */
+}
+
+.grid-item {
+  
+  text-align: center;
+}
+
+.grid-item img{
+  width: 200px;
+  height: 200px;
+}
+
+/* stats section */
+.Stats {
+  height: 550px;
+  background-image: url('../assets/freelancer.jpg'); 
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  width: 100%; /* Full width of the viewport/container */
+  position: relative;
+  opacity: 45%;
+}
+
+.user-stats {
+  background-color: #14A800; 
+  width: 100%; 
+  height: 100%; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 1; /* Ensure it appears above other content */
+  opacity: 0.7;
+}
+.grid-container-2 {
+  margin: 0 auto; /* Center the grid container horizontally */
+  display: grid;
+  grid-template-columns: repeat(2, 350px); 
+  grid-template-rows: repeat(2, 200px); 
+  gap: 20px;
+  padding: 30px; 
+  justify-content:center ;
+  height: 100vh;
+}
+
+.grid-item-2 {
+  font-family: 'Poppins';
+  background-color: #fff; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+.grid-item h2 {
+  font-size: 28px;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+.grid-item p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* feedback section  */
+
+.feedback{
+  padding: 100px 220px;
+}
+
+.feedback h1{
+  letter-spacing: 0.5px;
+  margin-bottom: 130px;
+  font-family: 'Poly';
+  font-size: 28px;
+  text-align: center;
+}
+
+.feedback-cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  margin: 30px 0;
+  height: 301px;
+  background-color: #fff;
+  width: 295px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-img {
+  margin-top: -100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: 'Poly';
+  letter-spacing: 0.4px;
+  font-size: 18px;
+  color: #14A800; 
+ margin-bottom: -12px;
+}
+
+.username {
+  font-family: 'Poppins';
+  font-size: 14px;
+  color: gray;
+}
+
+.quote {
+  text-align: left;
+  font-family: 'Poppins';
+  font-size: 12px;
+  color: #333;
+  padding: 10px;
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+  top: -10px;
+}
+/* 
+.quote-icon:first-of-type {
+  left: 10px;
+}
+
+.quote-icon:last-of-type {
+  right: 10px;
+} */
+
+.heading {
+  background-image: url('../assets/freelancer-2.jpg');
+  height: 160px; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 100%; 
+  position: relative;
+  opacity: 55%; 
+}
+
+.overlapp {
+  background-color: rgba(20, 168, 0, 0.8); 
+  width: 100%; 
+  height: 100%; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.overlapp h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff; 
+  font-size: 38px;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+}
+
+/* how it works section  */
+.how-it-works {
+  font-family: 'Poly';
+  padding: 40px 0 120px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.how-it-works-title {
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.how-it-works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 450px); 
+  grid-template-rows: repeat(2, auto); 
+  gap: 20px; 
+  justify-content: center; 
+}
+
+.how-it-works-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  position: relative;
+}
+
+.item-number {
+ justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #14A800; 
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 50%;
+  display: inline;
+  padding: 10px 18px;
+  top: 10px;
+  left: 10px;
+}
+
+.item-title {
+  
+  font-size: 22px;
+  color: #14A800; 
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.item-description {
+  font-size: 16px;
+  color: #666;
+}
+
+/* bottom-section  */
+.bottom-heading {
+  background-image: url('../assets/african-lady.jpg');
+  height: 400px; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: 100%; 
+  position: relative;
+  opacity: 55%; 
+}
+
+.bottom-overlay {
+  font-family: 'Poly';
+  background-color: rgba(20, 168, 0, 0.8); 
+  width: 100%; 
+  height: 100%; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 1; 
+  opacity: 0.8;
+}
+
+.specialized-services-section{
+  padding: 20px 100px;
+}
+
+.specialized-services-heading{
+  font-family: 'Poly';
+}
+
+.specialized-services-heading h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.specialized-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 680px); 
+  grid-template-rows: repeat(2, 100px); 
+  gap: 20px; 
+  justify-content: center; 
+}
+
+.specialized-service-item {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left; 
+}
+
+.specialized-service-item h3 {
+  font-size: 22px;
+  color: #000000; 
+  margin-bottom: 10px;
+}
+
+.specialized-service-item p {
+  font-size: 16px;
+  color: #080808;
+}
+
+.specialized-services-summary {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+@media(max-width : 410px){
+  .hero-section {
+    flex-direction: column; /* Stack text and button below the image */
+    align-items: center; /* Center align items horizontally */
+    text-align: center; /* Center text and button */
+  }
+
+  .hero-img {
+    width: 100%; /* Make image responsive */
+    margin-bottom: 20px; /* Add space below the image */
+    order: 1; /* Image appears first */
+  }
+
+  .container-1 {
+    width: max-content; /* Allow container to be responsive */
+    order: 2; /* Text and button appear after the image */
+  }
+  .showcase{
+    max-width: max-content;
+    margin-top: 500px;
+    padding: 0;
+  }
+  .grid-container {
+    padding: 30px 91px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 equal rows */
+    grid-gap: 10px; /* Space between grid items */
+  }
+  
+  .grid-container > :first-child {
+    visibility: hidden; /* Hide the element but keep its space */
+  }
+  .user-stats {
+    background-color: #14A800;
+    width: 793px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+.feedback h1{
+  width: max-content;
+}
+.feedback {
+  padding: 0 auto;
+}
+.feedback-cards {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.card{
+  margin: 76px 0;
+}
+.heading{
+  width: 793px;
+}
+.how-it-works-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 450px);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  justify-content: center;
+}
+.how-it-works{
+  margin-right: -258px;
+  margin-left: 141px;
+}
+.bottom-heading{
+  height: 450px;
+  width: 793px;
+}
+.specialized-services-grid{
+  grid-template-columns: repeat(2, 341px);
+    grid-template-rows: repeat(2, 142px);
+}
+.footer-container {
+  /* margin-left: 59px; */
+  display: flex;
+  justify-content: space-between;
+}
+.footer{
+  width: max-content;
+}
+.footer-social-media{
+  margin-top: o;
+}
+.footer-links, .footer-contact, .footer-social-media, .footer-legal {
+  flex: 1 1;
+  margin: 15px;
+  max-width: 250px;
+}
 }

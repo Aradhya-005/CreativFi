@@ -1,0 +1,85 @@
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Poppins';
+    padding: 40px 20px 0px 20px;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+
+  .footer-links,
+  .footer-contact,
+  .footer-social-media,
+  .footer-legal {
+    flex: 1;
+    margin: 10px;
+    max-width: 250px; 
+  }
+  
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social-media h3,
+  .footer-legal h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+ 
+  .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-links ul,
+  .footer-legal ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-legal li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a,
+  .footer-legal a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover,
+  .footer-legal a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social-media {
+    margin-top: 20px;
+  }
+  
+  .footer-social-media .social-icon {
+    margin: 0 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .footer-social-media .social-icon i {
+    font-size: 24px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+  }
+  
