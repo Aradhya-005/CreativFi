@@ -1,7 +1,7 @@
-# CreativFi 🌟
+# CreativFi ✨
 ### A Dedicated Platform for Content Creators
 
-**CreativeHub** is a specialized platform designed to connect content creators with freelancing opportunities tailored to their unique skills. Whether you are a writer, designer, video producer, or social media influencer, our service exclusively features job listings that align with your creative expertise.
+**CreativFi** is a specialized platform designed to connect content creators with freelancing opportunities tailored to their unique skills. Whether you are a writer, designer, video producer, or social media influencer, our service exclusively features job listings that align with your creative expertise.
 
 
 ## 🛠️ Technologies Used
@@ -15,12 +15,12 @@ Follow these steps to set up the project on your local machine:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YourUsername/CreativeHub
+git clone https://github.com/Aradhya-005/CreativFi.git
 
 ```
 ### 2. Navigate to the Project Directory
 ```
-cd CreativeHub
+cd CreativFi
 ```
 ### 3. Install Required Dependencies
 Install the necessary packages using npm:
