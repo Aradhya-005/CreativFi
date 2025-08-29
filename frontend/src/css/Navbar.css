@@ -1,0 +1,142 @@
+/* Navbar */
+
+.navbar {
+  background-color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  color: #333;
+  text-decoration: none;
+  font-family: "Red Rose";
+}
+.navbar-brand span {
+  color: #14a800;
+}
+.navbar-item {
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+
+.navbar-item:hover {
+  color: #555;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+.dropdown-button .icon {
+  height: 10px;
+  margin-left: 4px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar-signup {
+  border: 2px solid #14a800;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.navbar-signup::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  border-radius: 24px;
+  z-index: -2;
+}
+
+.navbar-signup::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #e2e8f0;
+  background-color: #14a800;
+  transition: all 0.3s;
+  border-radius: 24px;
+  z-index: -1;
+}
+
+.navbar-signup:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.navbar-signup:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    width: 793px;
+  }
+}
