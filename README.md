@@ -5,6 +5,7 @@
 
 ## 🛠️ Technologies Used
   - React.js
-  - HTML
-  - CSS
+  - Mongo db
+  - Express
+  - Node.js
 
