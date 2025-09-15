@@ -32,12 +32,10 @@ const SignIn = () => {
         return;
       }
 
-      // Optionally save token in localStorage/sessionStorage or context
       localStorage.setItem("token", data.token);
 
       setIsLoading(false);
 
-      // Redirect to dashboard or home after successful login
       navigate("/dashboard");
     } catch (err) {
       setError(err.message || "Something went wrong");
@@ -49,15 +47,26 @@ const SignIn = () => {
     <div className="container">
       <h1 className="header">Login to your account</h1>
       <p className="subtext">
-        Enter your email and password to log in or <Link to="/register">create an account</Link>
+        Enter your email and password to log in or{" "}
+        <Link to="/register">create an account</Link>
       </p>
 
       <div className="button-group">
-        <button type="button" className="button" onClick={() => alert("Twitter login not implemented yet")}>
-          <img src={twitterIcon} alt="Twitter Icon" width={20} height={20} /> Twitter
+        <button
+          type="button"
+          className="button"
+          onClick={() => alert("Twitter login not implemented yet")}
+        >
+          <img src={twitterIcon} alt="Twitter Icon" width={20} height={20} />{" "}
+          Twitter
         </button>
-        <button type="button" className="button" onClick={() => alert("Google login not implemented yet")}>
-          <img src={googleIcon} alt="Google Icon" width={20} height={20} /> Google
+        <button
+          type="button"
+          className="button"
+          onClick={() => alert("Google login not implemented yet")}
+        >
+          <img src={googleIcon} alt="Google Icon" width={20} height={20} />{" "}
+          Google
         </button>
       </div>
 

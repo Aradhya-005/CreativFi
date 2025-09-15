@@ -7,9 +7,9 @@ import { Link, useNavigate } from "react-router-dom";
 const SignUp = () => {
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -20,18 +20,16 @@ const SignUp = () => {
     setIsLoading(true);
 
     try {
-      // Replace the URL with your backend signup endpoint
-    const res = await fetch('http://localhost:5000/api/auth/signup', { 
-  method: 'POST', 
-  headers: { 'Content-Type': 'application/json' }, 
-  body: JSON.stringify({ username, email, password }) 
-});
-
+      const res = await fetch("http://localhost:5000/api/auth/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, email, password }),
+      });
 
       const data = await res.json();
 
       if (!res.ok) {
-        setError(data.message || 'Failed to register');
+        setError(data.message || "Failed to register");
         setIsLoading(false);
         return;
       }
@@ -40,11 +38,10 @@ const SignUp = () => {
       setIsLoading(false);
 
       setTimeout(() => {
-        navigate('/login');
+        navigate("/login");
       }, 1000);
-
     } catch (err) {
-      setError(err.message || 'Something went wrong');
+      setError(err.message || "Something went wrong");
       setIsLoading(false);
     }
   };
@@ -74,7 +71,7 @@ const SignUp = () => {
           name="username"
           placeholder="john"
           value={username}
-          onChange={e => setUsername(e.target.value)}
+          onChange={(e) => setUsername(e.target.value)}
           required
         />
 
@@ -85,7 +82,7 @@ const SignUp = () => {
           name="email"
           placeholder="m@example.com"
           value={email}
-          onChange={e => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
 
@@ -95,7 +92,7 @@ const SignUp = () => {
           id="password"
           name="password"
           value={password}
-          onChange={e => setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
           required
           minLength={8}
         />
@@ -112,11 +109,21 @@ const SignUp = () => {
       </div>
 
       <div className="button-group">
-        <button type="button" className="button" onClick={() => alert("Twitter login not implemented yet")}>
-          <img src={twitterIcon} alt="Twitter Icon" width={20} height={20} /> Twitter
+        <button
+          type="button"
+          className="button"
+          onClick={() => alert("Twitter login not implemented yet")}
+        >
+          <img src={twitterIcon} alt="Twitter Icon" width={20} height={20} />{" "}
+          Twitter
         </button>
-        <button type="button" className="button" onClick={() => alert("Google login not implemented yet")}>
-          <img src={googleIcon} alt="Google Icon" width={20} height={20} /> Google
+        <button
+          type="button"
+          className="button"
+          onClick={() => alert("Google login not implemented yet")}
+        >
+          <img src={googleIcon} alt="Google Icon" width={20} height={20} />{" "}
+          Google
         </button>
       </div>
     </div>

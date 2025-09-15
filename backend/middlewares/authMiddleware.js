@@ -23,7 +23,7 @@ const authMiddleware = (req, res, next) => {
     // Verify token with secret key
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     console.log("Decoded token payload:", decoded);
-    req.userId = decoded.id;  // set userId to request object for downstream handlers
+    req.userId = decoded.id;  
     next();                   // token valid, proceed to next middleware/route handler
   } catch (err) {
     console.error("JWT verification error:", err.message);
