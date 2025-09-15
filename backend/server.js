@@ -16,7 +16,11 @@ const app = express();
 
 
 app.use(cors({
-  origin: "http://localhost:3000", // your React app port
+    origin: [
+    "http://localhost:3000",         
+    "https://creativfi.onrender.com" 
+  ],
+ 
   credentials: true,
 }));
 app.use(express.json());
