@@ -13,8 +13,6 @@ dotenv.config();
 const app = express();
 
 // Middleware
-
-
 app.use(cors({
     origin: [
     "http://localhost:3000",         
@@ -24,6 +22,11 @@ app.use(cors({
   credentials: true,
 }));
 app.use(express.json());
+
+
+app.get('/ping', (req, res) => {
+  res.json({ status: 'alive', timestamp: new Date().toISOString() });
+});
 
 // Connect Database
 connectDB();
